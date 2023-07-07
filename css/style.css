@@ -1,0 +1,228 @@
+*{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;    
+    height: 98vh;
+}
+
+form{ 
+    position: relative;
+}
+
+header{
+    padding: 20px;
+}
+
+h1{
+    text-transform: uppercase;
+    color: rgb(192, 166, 165);
+    font-weight: 300; 
+    margin: auto;  
+    width: 198px;
+}
+
+h1 > span{
+    color: #433A3B;
+    font-weight: 700;    
+}
+
+p{
+    color: rgb(192, 166, 165); 
+    margin: 15px auto; 
+}
+
+.container{
+    background-image:linear-gradient(135deg,#FFFBFA, #FFF9F8, #FFF7F6, #FFF5F4, #FFF3F3);
+    width: 80%;
+    margin: 10%;
+}
+
+.description{
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.description button{
+    border-radius: 25px;
+    border: none;
+    background-image: linear-gradient(to right, #f4abac, #f3a5a6, #f29f9f, #f19a99, #f09492);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 3px 7px 18px 9px #F8DEDE;
+    position: relative; 
+    bottom: 38px;
+    left: 45.5%; 
+    padding: 7px 20px; 
+    cursor: pointer;
+}
+
+.description button:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    
+}    
+
+.description input{
+    padding: 10px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.description input[type=email]{
+    background: #FFF6F5;
+    border: 2px solid #DBCBCC;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.description input[type=email]:focus{
+   outline-color: #433A3B;
+}
+
+.description input[type=email]::placeholder{
+    color: #dbcdcc;
+}
+
+.description form img{
+    position: absolute;
+    bottom: 45px;
+    right: 60px;
+}
+
+#errorMsg, .description form img{
+    visibility: hidden;
+}
+
+.picture img{
+    width: 100%;
+    height: auto;
+}
+
+.picture{
+    width: 100%;
+    height: 100%;
+    
+}
+/* **************************Media queries */
+@media only screen and (max-width: 310px){
+    h1{
+        width: auto; 
+    }
+    .description button{
+        left: 45%;
+    }
+
+    .description form img{
+        position: absolute;
+        right: 44px;
+    }
+}
+
+@media  (min-width: 833px) and (max-width: 933px){
+    .description button{
+        left: 48%;
+    }
+
+}
+
+
+@media (min-width: 934px){
+     .description button{
+        left: 48.5%;
+    } 
+} 
+
+@media only screen and (min-width: 1363px) {
+    form{
+        position: absolute;
+        left: 130px;
+        bottom: 130px;
+    }
+
+    header{
+        position: absolute;
+        left: 138px;
+        z-index: 1;
+        margin: 80px auto 20px 0px;
+        padding: 0;        
+    }
+
+    h1{
+        margin-left:inherit;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        font-size: 50px;
+        line-height: 1.2;
+        letter-spacing: 8px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;    
+    }
+    
+    .description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        padding: 130px 240px 108px 130px;   
+    }
+
+    .description button{
+        left: 360px;
+        padding: 13px 40px;
+        bottom: 50px;
+    }
+
+    .description input[type=email]{
+        margin-top: 40px;
+        width: 160%;
+        padding: 16px ;
+        border-radius: 25px;    
+    }  
+
+    .description form img{
+        bottom: 63px;
+        right: -60px;
+    }
+
+    .description p{
+        margin-top: 10px;
+        margin-bottom: 70px;
+        line-height: 1.5;
+        width: 440px;    
+    }
+
+    #errorMsg{
+        margin: auto;
+    }
+    .picture img{
+       display: none;
+    } 
+
+    .picture{
+        background: url(../images/hero-desktop.jpg)no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        height: 744px;      
+    }
+}
+
+
