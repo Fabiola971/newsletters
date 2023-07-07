@@ -38,7 +38,7 @@ p{
 .container{
     background-image:linear-gradient(135deg,#FFFBFA, #FFF9F8, #FFF7F6, #FFF5F4, #FFF3F3);
     width: 80%;
-    margin: 10%;
+    margin: 0 10%;
 }
 
 .description{
@@ -213,11 +213,13 @@ p{
     #errorMsg{
         margin: auto;
     }
+
     .picture img{
        display: none;
     } 
 
     .picture{
+        position: relative;
         background: url(../images/hero-desktop.jpg)no-repeat;
         background-size: 100% 100%;
         background-position: center;
